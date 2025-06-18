@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { localStrings } from "../utils/Constants"
 import { Card } from "react-bootstrap"
 import ContactDetails from "../components/ContactDetails"
-import { CallSchedulerContext } from "../context/callSchedulerContext";
+import { CallSchedulerContext } from "../context/CallSchedulerContext";
 
 function OnboardSteps() {
     const context = useContext(CallSchedulerContext);
