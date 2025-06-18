@@ -3,7 +3,7 @@ import Logo from "../assets/images/logo.svg"
 import DateTimeSelector from "./DateAndTimeSelector";
 import OnboardSteps from "./OnboardSteps";
 import UserInformation from "./UserInformation";
-import { CallSchedulerContext } from "../context/callSchedulerContext";
+import { CallSchedulerContext } from "../context/CallSchedulerContext";
 
 function CallScheduler() {
     const context = useContext(CallSchedulerContext);
