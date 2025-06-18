@@ -217,7 +217,7 @@ function UserInformation() {
         }
         setLoading(true)
         const cardElement = elements.getElement(CardElement);
-        const { token } = await stripe.createToken(cardElement);
+        // const { token } = await stripe.createToken(cardElement);
 
         const result = await stripe.createPaymentMethod({
             type: 'card',
