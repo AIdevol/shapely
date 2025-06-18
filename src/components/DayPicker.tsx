@@ -10,15 +10,15 @@ import { CallSchedulerContext } from '../context/CallSchedulerContext';
 import useAppointmentTypes from '../hooks/useAppointmentTypes';
 import { useLocation } from 'react-router-dom';
 
-const ALL_ORG_MEMBER = gql`query {
-  organizationMembers(page_size: 100) {
-    id
-    first_name
-    last_name
-    email
-  }
-}
-`;
+// const ALL_ORG_MEMBER = gql`query {
+//   organizationMembers(page_size: 100) {
+//     id
+//     first_name
+//     last_name
+//     email
+//   }
+// }
+// `;
 
 const DAYS_AVAILABLE_FOR_RANGE = gql`
 query daysAvailableForRange(
@@ -106,7 +106,7 @@ function DayPicker() {
     }
   }, [nextAvailableSlot?.nextAvailableSlot]);
 
-  const { data: allData }: any = useQuery(ALL_ORG_MEMBER)
+  // const { data: allData }: any = useQuery(ALL_ORG_MEMBER)
 
   const highlightDates = useMemo(() => {
     return data?.daysAvailableForRange?.map((day: string) =>
